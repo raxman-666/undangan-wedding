@@ -1,0 +1,70 @@
+:root{
+    --purple: #D4B0B6;
+    --bg: #91887B;
+    --white: #F1ECDF;
+    --shadow: 0 2px 2px rgb(0, 0, 0 / 0.5);
+}
+
+body{
+    font-size: 1.2rem;
+    font-family: 'Forum', cursive;
+    color: var(--white);
+}
+
+body.lock-scroll {
+    overflow: hidden;
+}
+
+.hero img{
+    width: 150px;
+    box-shadow: var(--shadow);
+    filter: saturate();
+}
+
+.hero{
+    position: relative;
+    min-height: 100vh;
+    background-color: var(--bg);
+}
+
+.hero h1{
+    font-size: 5rem;
+    font-family: 'Pinyon Script', cursive;
+}
+
+.hero a{
+    color: var(--purple);
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+}
+
+.hero a:hover{
+    background-color: var(--purple);
+    color: var(--white);
+}
+
+@media (max-width: 992px){
+    html{
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 768px){
+    html{
+        font-size: 65%;
+    }
+
+    .simply-countdown>.simply-section{
+        padding: 40px;
+    }
+}
+
+@media (max-width: 576px){
+    html{
+        font-size: 60%;
+    }
+
+    .simply-countdown>.simply-section{
+        padding: 20px;
+    }
+}
