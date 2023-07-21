@@ -2,7 +2,7 @@
     --purple: #D4B0B6;
     --bg: #91887B;
     --white: #F1ECDF;
-    --shadow: 0 2px 2px rgb(0, 0, 0 / 0.5);
+    --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
 }
 
 body{
