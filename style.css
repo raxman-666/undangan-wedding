@@ -15,16 +15,25 @@ body.lock-scroll {
     overflow: hidden;
 }
 
-.hero img{
-    width: 150px;
-    box-shadow: var(--shadow);
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/prewed-dim-heng.jpg);
+    z-index: -1;
     filter: saturate();
 }
 
 .hero{
     position: relative;
     min-height: 100vh;
-    background-color: var(--bg);
+}
+
+.hero h4, h1, p {
+    text-shadow: var(--shadow);
 }
 
 .hero h1{
@@ -41,6 +50,25 @@ body.lock-scroll {
 .hero a:hover{
     background-color: var(--purple);
     color: var(--white);
+}
+
+.img-container {
+    position: relative;
+    transition: transform 0.3s ease-in-out; /* Tambahkan transition property */
+  }
+
+.btn-container {
+    position: relative;
+    animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
 }
 
 @media (max-width: 992px){
