@@ -77,6 +77,11 @@ body.lock-scroll {
         font-size: 65%;
     }
 
+    .hero::before {
+        background-image: url(img/prewed.jpg);
+        background-size: contain;
+    }
+
     .simply-countdown>.simply-section{
         padding: 40px;
     }
