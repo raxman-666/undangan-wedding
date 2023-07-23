@@ -52,11 +52,6 @@ body.lock-scroll {
     color: var(--white);
 }
 
-.img-container {
-    position: relative;
-    transition: transform 0.3s ease-in-out; /* Tambahkan transition property */
-  }
-
 .btn-container {
     position: relative;
     animation: bounce 0.5s infinite alternate;
@@ -90,6 +85,11 @@ body.lock-scroll {
 @media (max-width: 576px){
     html{
         font-size: 60%;
+    }
+
+    .hero::before {
+        background-image: url(img/prewed.jpg);
+        background-size: contain;
     }
 
     .simply-countdown>.simply-section{
